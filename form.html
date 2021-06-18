@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 1 de Web1</title>
+    <link href="./css/estilo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="./img/logo.svg" alt="Logo do site" />
+      </picture>
+      <h1>Laboratório de Aplicações Web 1</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="tabela.html">Tabela</a>
+        </li>
+        <li>
+          <a href="form.html">Formulário</a>
+        </li>
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <form method="POST" action="" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Cadastro</legend>
+          <label for="id">Id:</label>
+          <input type="number" name="idescondido" value="199" readonly /><br />
+          <label>Nome: </label>
+          <input type="text" name="nome" /><br />
+          <input type="checkbox" name="curso[]" value="info" id="info" />
+          <label for="info">Informática</label>
+          <br />
+          <input type="checkbox" name="curso[]" value="edif" id="edif" />
+          <label for="edif">Edificações</label><br />
+          <input type="checkbox" name="curso[]" value="meca" id="meca" />
+          <label for="meca">Mecatrônica</label><br />
+          <input type="color" name="cor" /><br />
+          <input type="date" name="data" /><br />
+          <input type="datetime-local" name="datahora" /><br />
+          <input type="email" name="email" required /><br />
+          <input type="file" name="arquivo[]" multiple /><br />
+          <input type="hidden" name="id" value="1" /><br />
+          <input type="image" /><br />
+          <input type="month" /><br />
+          <input type="number" /><br />
+          <input type="password" /><br />
+          <input type="radio" name="cursado" value="info" /><br />
+          <input type="radio" name="cursado" value="edif" /><br />
+          <input type="radio" name="cursado" value="meca" /><br />
+          <input type="range" name="slide" min="1" max="5" step="2" /><br />
+          <input type="search" required /><br />
+          <input type="tel" required /><br />
+          <input type="time" /><br />
+          <input type="url" required /><br />
+          <input type="week" /><br />
+          <label for="ano">Ano</label>
+          <select name="ano[]" id="ano" required multiple>
+            <option></option>
+            <option value="1">Primeiro ano</option>
+            <option value="2">Segundo ano</option>
+            <option value="3">Terceiro ano</option></select
+          ><br />
+          <button type="submit">Salvar</button>
+          <button type="reset">Limpar</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <div>&copy; CopyLeft</div>
+      <picture>
+        <a href="https://facebook.com" target="_blank">
+          <img src="./img/instaFace.svg" alt="Instagram e Facebook" />
+        </a>
+      </picture>
+    </footer>
+  </body>
+</html>

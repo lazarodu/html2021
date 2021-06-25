@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  border: 0.5rem solid #3c7196;
+  align-items: center;
+}
+header picture img {
+  height: 100px;
+  border: 0;
+  margin: 5px;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}

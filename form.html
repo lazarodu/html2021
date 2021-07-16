@@ -7,7 +7,7 @@
     <title>Aula 1 de Web1</title>
     <link href="./css/estilo.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="container">
     <header>
       <picture>
         <img src="./img/logo.svg" alt="Logo do site" />
@@ -34,10 +34,14 @@
       <form method="POST" action="" enctype="multipart/form-data">
         <fieldset>
           <legend>Cadastro</legend>
-          <label for="id">Id:</label>
-          <input type="number" name="idescondido" value="199" readonly /><br />
-          <label>Nome: </label>
-          <input type="text" name="nome" /><br />
+          <div>
+            <label for="id">Id:</label>
+            <input type="number" name="idescondido" value="199" readonly />
+          </div>
+          <div>
+            <label>Nome: </label>
+            <input type="text" name="nome" />
+          </div>
           <input type="checkbox" name="curso[]" value="info" id="info" />
           <label for="info">Informática</label>
           <br />

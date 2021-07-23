@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aula 1 de Web1</title>
     <link href="./css/estilo.css" rel="stylesheet" />
+    <link href="./css/responsivo.css" rel="stylesheet" />
+    <link href="./css/menu.css" rel="stylesheet" />
   </head>
   <body id="topo" class="container">
     <header>
@@ -15,6 +17,12 @@
       <h1>Laboratório de Aplicações Web 1</h1>
     </header>
     <nav>
+      <input id="menu-toggle" type="checkbox" />
+      <label for="menu-toggle">
+        <div class="menu-hamburger">
+          <span class="hamburger"></span>
+        </div>
+      </label>
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -42,21 +50,21 @@
           <a href="#r3">Pergunta: Já está na hora de descansar?</a>
         </li>
       </ol>
-      <h4 id="r1">Resposta 1</h4>
-      <p>Gostei muito</p>
-      <a href="#topo">Voltar</a>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <h4 id="r2">Resposta 2</h4>
-      <p>Um pouco</p>
-      <a href="#topo">Voltar</a>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <h4 id="r3">Resposta 3</h4>
-      <p>Daqui alguns minutos</p>
-      <a href="#topo">Voltar</a>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="resposta">
+        <h4 id="r1">Resposta 1</h4>
+        <p>Gostei muito</p>
+        <a href="#topo">Voltar</a>
+      </div>
+      <div class="resposta">
+        <h4 id="r2">Resposta 2</h4>
+        <p>Um pouco</p>
+        <a href="#topo">Voltar</a>
+      </div>
+      <div class="resposta">
+        <h4 id="r3">Resposta 3</h4>
+        <p>Daqui alguns minutos</p>
+        <a href="#topo">Voltar</a>
+      </div>
     </main>
     <footer>
       <div>&copy; CopyLeft</div>
